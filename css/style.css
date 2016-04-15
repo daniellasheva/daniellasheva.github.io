@@ -1,0 +1,196 @@
+html {
+  margin: 0;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.logo {  /*how do i write "img" here?    */
+width: 10%;
+height: .5%;
+display: inline;
+float: left;
+}
+
+header {
+  background-color: #f15b06;
+  top: 0;
+  height: 50px;
+}
+
+#beat{
+  max-width: 70%;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  margin-right: 2%;
+  margin-left: 2%;
+  font-size: 20px
+}
+header nav{
+  padding: 10px;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+.mainbody h1 {
+ position: absolute; 
+ top: 44px; 
+ left: 0; 
+ width: 100%; 
+ margin-top: 15px;
+ color: #008080;
+ font-size: 300%;
+ text-shadow: 3px 0 0 black;
+}
+
+h1 span {
+  color: #008080;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px; 
+}
+
+h2 {
+  color: white;
+  margin-top: 450px;
+  font-size: 250%;
+}
+
+.white  {
+  text-shadow: 1px 0 0 white;
+  background: none;
+}
+
+.divwhite {
+  background-color: white;
+  height: 150px;
+  display: block;
+  top: 0;
+}
+
+.orange {
+  background-color: orange;
+  font-size: 30%;
+  width: 30%;
+  height: 30%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.orange h1 {
+  text-align: center;
+  padding-top: 3%;
+  margin:;
+}
+
+h4{
+  margin: 10px;
+}
+
+.mainbody{
+  display: flex;
+  justify-content: center;
+  background: url(../images/Handholding.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+  height: 600px;
+}
+
+.thewhy h3{
+  color: orange;
+}
+
+.content {
+  background-color: darkblue;
+  width: 100%;
+  height: 300px;  /*do something with em*/
+  color: white;
+  font-family: helvetica;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.billing, .payment{
+  width: 50%;
+  margin-top: 30px;
+}
+
+li {
+  padding: 5px;
+}
+
+#inspire {
+  margin-bottom: 0px;
+  color: #f15b06;
+}
+form {
+  width: 75%;
+}
+
+label, input, select {
+    /* in order to define widths */
+  display: inline-block;
+}
+
+label, select {
+    width: 30%;
+    /* positions the label text beside the input */
+    text-align: right;
+}
+
+label + input + select {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 30% 0 4%;
+}
+
+/* only the submit button is matched by this selector,
+   but to be sure you could use an id or class for that button */
+input + input {
+    float: right;
+}
+
+#button{
+  margin-left: 30px;
+}
+
+button{
+  border-radius: 5px;
+  box-shadow: 10px
+}
+​
+img h1{
+  margin-top: 0px;
+}
+.reason{
+  float: left;
+  width
+}
+footer{
+  padding: 10px;
+  padding-bottom: 5px
+}
+
+footer img{
+  width: 8%;
+  height: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #beat{
+    max-width: 100%
+  }
+
+}
+
+
+
