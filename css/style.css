@@ -7,13 +7,6 @@ body{
   margin: 0;
 }
 
-.logo {  /*how do i write "img" here?    */
-width: 10%;
-height: .5%;
-display: inline;
-float: left;
-}
-
 header {
   background-color: #f15b06;
   top: 0;
@@ -39,27 +32,80 @@ header nav{
 }
 
 .mainbody h1 {
- position: absolute; 
- top: 44px; 
- left: 0; 
+ position: absolute;
+ top: 10%; 
+ left: 0;
  width: 100%; 
  margin-top: 15px;
  color: #008080;
- font-size: 300%;
+ font-size: 450%;
  text-shadow: 3px 0 0 black;
+}
+
+#secondh1{
+  position: absolute;
+  top: 24%;
 }
 
 h1 span {
   color: #008080;
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
-  padding: 10px; 
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-left: 0;
+  border-radius: 5px;
 }
 
-h2 {
+.mainbody{
+  display: flex;
+  justify-content: center;
+  background: url(../images/Handholding.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+  height: 600px;
+  padding: 10%;
+  background-attachment: fixed; 
+}
+
+.mainbody h2 {
   color: white;
   margin-top: 450px;
-  font-size: 250%;
+  font-size: 300%;
+  left: 0;
+  color: white;
+}
+
+.checkerboard {
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+}
+
+.logoclass {
+ height: 300px;
+ display: flex;
+ justify-content: center;
+}
+
+.logo {  /*how do i write "img" here?    */
+  padding: 5%;
+  margin-right: 13%;
+}
+
+.logoclass p {
+  background-color: black;
+  color: white;
+  padding: 9%;
+  font-size: 15px;
+  margin: 0;
+  text-align: center;
+  margin: 0;
+  width: 50%;
+}
+
+#mainpic {
+  width: 50%;
+  height: 100%;
 }
 
 .white  {
@@ -69,36 +115,75 @@ h2 {
 
 .divwhite {
   background-color: white;
-  height: 150px;
   display: block;
   top: 0;
 }
 
 .orange {
-  background-color: orange;
-  font-size: 30%;
-  width: 30%;
-  height: 30%;
+  color: #f15b06;
+  font-size: 70%;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 5px;
+  width: 80%;
+  height: 350px;
+  margin-top:0;
+  background: url(../images/main.jpg) repeat-x;
+  background-attachment: fixed;
 }
 
 .orange h1 {
   text-align: center;
-  padding-top: 3%;
-  margin:;
+  padding-top: 10%;
+  top: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amountform {
+  margin: auto;
+  border: none;
+}
+
+.amountform label {
+  width: 10%;
+}
+
+.amountform input {
+  width: 3%;
+  padding-left: 2px;
+}
+
+.amountform li {
+  padding: 2%;
+}
+
+.paypalWrapper h2 {
+  margin: 0;
+  margin-left: 10%;
+}
+
+.paypal input {
+  float: right;
+  width: 25%;
+  height: 25%;
+}
+
+/*#donateButton button {
+  margin: auto;
+  background-color: black;
+  color: #f15b06;
+  margin: auto;
+  width: 30%;
+  height: 50%;
+  margin-bottom: 15%;
+  font-size: 25%; */
 }
 
 h4{
   margin: 10px;
-}
-
-.mainbody{
-  display: flex;
-  justify-content: center;
-  background: url(../images/Handholding.jpg) no-repeat center top rgb(134,141,157);
-  background-size: cover;
-  height: 600px;
 }
 
 .thewhy h3{
@@ -115,12 +200,19 @@ h4{
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .billing, .payment{
   width: 50%;
-  margin-top: 30px;
 }
+
+.billing{
+  margin-left: 10%;
+  float: left;
+}
+
+
 
 li {
   padding: 5px;
@@ -158,13 +250,40 @@ input + input {
     float: right;
 }
 
-#button{
+#submitButton{
   margin-left: 30px;
 }
 
 button{
   border-radius: 5px;
-  box-shadow: 10px
+  box-shadow: 10px;
+}
+
+#submit {
+  margin-top: 10%;
+  background-color: #FFD700;
+  font-size: 20px;
+  padding: 5%;
+  border: none;
+}
+
+.donateButton {
+  border-radius: 5px;
+  box-shadow: 10%;
+  background: #f15b06;;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 12px;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+  border-radius: 5px;
+  width: 40%;
+  margin: auto;
+  height: 65px;
+  font-size: 40px;
 }
 ​
 img h1{
@@ -175,19 +294,45 @@ img h1{
   width
 }
 footer{
+  margin-top: 5%;
   padding: 10px;
-  padding-bottom: 5px
+  padding-bottom: 5px;
+  display: block;
+  height: 15%;
+  font-size: 13%;
+  text-align: center;
+  background: #f15b06;
+  color: white;
 }
 
 footer img{
   width: 8%;
   height: 70%;
+  display: inline;
 }
 
-@media only screen and (max-width: 600px) {
+li span {
+ padding-top: 5px;
+ margin-top: 2%;
+}
+
+#yellow {
+  text-align: center;
+  color: #FFD700;
+}
+
+@media only screen and (max-width: 500px) {
 
   #beat{
-    max-width: 100%
+    max-width: 100%;
+  }
+
+  .donateButton {
+    font-size: 30px
+  }
+
+  header {
+    height: 70px;
   }
 
 }

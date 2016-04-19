@@ -20,21 +20,46 @@
   </nav>
 </header>
 
+
 <div class = "mainbody">
-  <h1><span>Transform an hour.<span class= "white"></span></span></h1>
+  <h1><span>Transform an hour.</span></h1>
   <h2>Change a life.</h2>
 </div>
 
-<div class = "divwhite">
-  <div class= "orange">
-    <h1>Your donation brings entertainment and companionship to those who need it.</h1>
+<div class = "checkerboard">
+  <div class = "logoclass">
+    <p>Music vs is dedicated to creating experiences for patients and residents in hospitals and nursing homes that resound with song, nurture creativity, and foster connections that last. </p>
+    <img class = "logo" src="images/logo.jpg">
+  </div>
+
+  <div class = "logoclass">
+   <img id = "mainpic" src="images/Queens.jpg">
+    <p>Your donation helps to fund entertainment, activities, volunteer coordination and transportation. </p> 
   </div>
 </div>
 
+  <div class= "orange">
+     <h1>Bring companionship and joy to those who need it most. </h1>
+    <div class = "wrapper">
+     <a class="donateButton" href="#">Donate today!</a>
+     </div>
+  </div>
 
+  <h1 id= "yellow">Donate by credit card or through Paypal:</h1>
+
+<form class = "amountform">
+    <label>$5 </label> <input type ="radio" name = "amount">
+    <label>$10 </label><input type ="radio" name = "amount">
+    <label>$15 </label><input type ="radio" name = "amount">
+    <label>$20 </label><input type ="radio" name = "amount">
+    <label>$50 </label><input type ="radio" name = "amount">
+    <label>Other:  $ </label><input type ="text">
+</form>
+ 
+<div class = "wrapper">
 <div class = "billing">
   <h4>Billing Information</h4>
-            <form action ="billing" method = "post">
+            <form class = "form" action ="#" method = "post">
               <ul>
             
                 <li>
@@ -456,17 +481,32 @@
                   </label>
                    <input type ="text" name ="text" placeholder=''>
                 </li>
-            </form>
-            </div>
-            <div id="button">
-              <button name="submit">
-                Register Now!
+                <li>
+                  <input type="checkbox" name= "terms" value= "agree"/>
+                    <span>I agree to the terms</span>
+                </li>
+              <button id ="submit" input type= "submit" value= "send">
+                Submit Payment Information
                 </button>
             </ul>
+          </form>
       </div>
+    </div>
+
+    <div class = "paypalWrapper">
+      <h2>Pay through Paypal: </h2>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="7BUJ2MQYLR6L8">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+   </div>
 
 
-  <div class= "thewhy"> 
+
+
+  <!-- <div class= "thewhy"> 
     <h3>Supporting Our Programs Means...</h3>
       <div class= "reason">
       <p>Providing volunteer transportation to hospitals, nursing homes, and events</p>
@@ -477,14 +517,15 @@
       <div class= "reason">
       <p>Spread the Music Vs. movement to campuses worldwide</p>
     </div>
-  </div>
+  </div> -->
 
 <footer>
 <img src="images/nealsfund.png"> 
-<span>&#169 Music Vs 2016</span>
-<p>Music Vs is a non-profit 501 (c)(3) organization</p>
+<span>&#169 Music Vs 2016. </span><span>Music Vs is a non-profit 501 c3 organization</span>
 </footer>
 
+ <script src="js/jquery-2.1.4.js"></script>
+ <script src="js/index.js"></script>
 
 
 </body>
